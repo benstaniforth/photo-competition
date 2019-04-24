@@ -34,6 +34,8 @@
 
 body {
   margin: 0;
+  background-color: #DDDDDD;
+  font-family: 'Roboto', Arial, calibri, sans-serif;
 }
 
 .main-content {
@@ -41,4 +43,20 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.about-image {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-shrink: inherit;
+
+  width: 800px;
+  height: 1400px;
+}
+
+.about-image img {
+  object-fit: contain;
+  object-position: 0 0;
+  width: 100%;
 }
