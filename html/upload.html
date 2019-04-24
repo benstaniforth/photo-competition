@@ -8,7 +8,7 @@
     <meta name="author" content="Softwire">
 
     <!-- Title -->
-    <title>Photo Competition - Home</title>
+    <title>Photo Competition - Upload</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../stylesheets/common.css">
@@ -18,7 +18,7 @@
 
     <!-- Custom JS -->
     <script src="../js/common.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/uploadimage.js"></script>
 </head>
 
 <body>
@@ -35,34 +35,19 @@
 
 <!-- Page content -->
 <div class="main-content">
-    <h1 class="page-title">Photo Competition</h1>
+    <h1 class="page-title">Upload Image</h1>
 
-    <div class="image-container">
-        <!-- src and alt attribute will be populated by index.js on page load -->
-        <img id="main-image" src="">
-    </div>
+    <form>
+        Author Name:
+        <input type="text" name="author" id="author" required>
+        <br>
+        Image name:
+        <input type="text" name="name" id="name" required>
+        <br>
+        Select an image: <input type="file" name="myFile" required><br><br>
+        <button type="button" onclick="uploadImage()">Upload!</button>
+    </form>
 
-    <div class="voting-buttons">
-        <button class="voting-button vote-up" onclick="upvoteImage()">I love it</button>
-        <button class="voting-button vote-down" onclick="downvoteImage()">I hate it</button>
-    </div>
-
-    <table class="image-details">
-        <tbody>
-            <tr>
-                <td><b>Author</b></td>
-                <td id="author">TODO: Fill in author details.</td>
-            </tr>
-            <tr>
-                <td><b>Name</b></td>
-                <td id="name">TODO: Fill in image details.</td>
-            </tr>
-            <tr>
-                <td><b>Licence</b></td>
-                <td id="license">TODO: Fill in licence details.</td>
-            </tr>
-        </tbody>
-    </table>
 </div>
 
 </body>
