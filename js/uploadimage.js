@@ -3,6 +3,17 @@
 function uploadImage() {
     var formData = new FormData();
     var fileField = document.querySelector("input[type='file']");
+    var form = document.getElementsByTagName('form');
+    var inputAuthor = document.getElementById('author');
+    var inputName = document.getElementById('name');
+    var file = document.getElementById('file');
+
+    var errorMessage = "Please complete all the fields";
+
+    if (inputAuthor.checkValidity() === false || inputName.checkValidity() === false || file.isEmptyObject() === true) {
+        alert(errorMessage);
+        return;
+    }
 
     formData.append('metadata', new Blob([JSON.stringify({
         author: $('#author').val(),

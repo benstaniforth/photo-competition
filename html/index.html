@@ -10,7 +10,10 @@
     <!-- Title -->
     <title>Photo Competition - Home</title>
 
+    <link rel="shortcut icon" href="../images/photo-camera.png"/>
+
     <!-- Custom CSS -->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" href="../stylesheets/common.css">
 
     <!-- Vendor JS -->
@@ -19,12 +22,13 @@
     <!-- Custom JS -->
     <script src="../js/common.js"></script>
     <script src="../js/index.js"></script>
+
 </head>
 
 <body>
 
 <!-- Navigation bar -->
-<nav class="navbar main-content">
+<nav class="navbar navbar-dark primary-color">
     <ul class="navbar-list">
         <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
         <li class="navbar-item"><a class="navbar-link" href="toprated.html">Top Rated Photo</a></li>
@@ -48,19 +52,22 @@
     </div>
 
     <table class="image-details">
+        <thead>
+        <b>Image Details</b>
+        </thead>
         <tbody>
-            <tr>
-                <td><b>Author</b></td>
-                <td id="author">TODO: Fill in author details.</td>
-            </tr>
-            <tr>
-                <td><b>Name</b></td>
-                <td id="name">TODO: Fill in image details.</td>
-            </tr>
-            <tr>
-                <td><b>Licence</b></td>
-                <td id="license">TODO: Fill in licence details.</td>
-            </tr>
+        <tr>
+            <td><b>Author</b></td>
+            <td id="author">TODO: Fill in author details.</td>
+        </tr>
+        <tr>
+            <td><b>Name</b></td>
+            <td id="name">TODO: Fill in image details.</td>
+        </tr>
+        <tr>
+            <td><b>Licence</b></td>
+            <td id="license">TODO: Fill in licence details.</td>
+        </tr>
         </tbody>
     </table>
 </div>

@@ -10,7 +10,10 @@
     <!-- Title -->
     <title>Photo Competition - Upload</title>
 
+    <link rel="shortcut icon" href="../images/photo-camera.png"/>
+
     <!-- Custom CSS -->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" href="../stylesheets/common.css">
 
     <!-- Vendor JS -->
@@ -19,12 +22,13 @@
     <!-- Custom JS -->
     <script src="../js/common.js"></script>
     <script src="../js/uploadimage.js"></script>
+
 </head>
 
 <body>
 
 <!-- Navigation bar -->
-<nav class="navbar main-content">
+<nav class="navbar">
     <ul class="navbar-list">
         <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
         <li class="navbar-item"><a class="navbar-link" href="toprated.html">Top Rated Photo</a></li>
@@ -39,16 +43,17 @@
 
     <form>
         Author Name:
-        <input type="text" name="author" id="author" required>
+        <input type="text" name="author" id="author" placeholder="Author" required>
         <br>
         Image name:
         <input type="text" name="name" id="name" required>
         <br>
-        Select an image: <input type="file" name="myFile" required><br><br>
+        Select an image: <input type="file" name="file" required><br><br>
         <button type="button" onclick="uploadImage()">Upload!</button>
     </form>
 
 </div>
+
 
 </body>
 </html>
